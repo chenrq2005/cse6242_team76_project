@@ -92,7 +92,7 @@ python app.py
 
 ## Demo Video
 
-Youtube URL: https://youtu.be/xEfdnELbtAM
+- Youtube URL: https://youtu.be/xEfdnELbtAM
 
 ## FAQs
 
