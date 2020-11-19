@@ -96,7 +96,7 @@ python app.py
 
 ## FAQs
 
-- If port number 6242 is used in other process
+- If port number 6242 is used in other process\
   You need to change the port number in the line in app.py
   
   ```
