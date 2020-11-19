@@ -38,7 +38,7 @@ If you find errors with our implementation, please submit a pull request on our 
 https://github.com/chenrq2005/cse6242_team76_project.git
 ```
 
-- Some files with size larger than 100 MB are not included in the Git repo, like the precessed datasets (dataset_featureviz.csv files) and trained models (15wRF_limit.pickle and 15wXGB_limit.pickle). Please download them from [this Google shared drive](https://drive.google.com/drive/folders/11G-OWjtxEsZ6_sLuW03AQNa4mlvdiTS5). After downloading, please **save that .csv file into the app foler /static/data directory and save the two .pickle files to /models/ directory. If may need to create the models directory if you do not see it in the clone structur**.
+- Some files with size larger than 100 MB are not included in the Git repo, like the precessed datasets (dataset_featureviz.csv files) and trained models (15wRF_limit.pickle and 15wXGB_limit.pickle). Please download them from [this Google shared drive](https://drive.google.com/drive/folders/11G-OWjtxEsZ6_sLuW03AQNa4mlvdiTS5). After downloading, please **save that .csv file into the app foler /static/data directory and save the two .pickle files to /models/ directory. It may need to create the models directory if you do not see it in the clone structure**.
 
 We also recommend reviewing the website on Kaggle <a href="https://www.kaggle.com/sobhanmoosavi/us-accidents/" target="_blank">here</a> that helps understand the various columns/attributes of the data.
 
