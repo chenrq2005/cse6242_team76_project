@@ -98,10 +98,11 @@ python app.py
 
 - If port number 6242 is used in other process
   You need to change the port number in the line in app.py
-  '''
+  
+  ```
   if __name__ == '__main__':
     app.run(host='localhost', port=6242, debug=True)
-  '''
+  ```
   
 - How to send feedback to the developers?\
   In the “Team Introduction” tab you can send email to the developer by clicking developer's name. 
