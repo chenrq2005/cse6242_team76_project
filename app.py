@@ -76,6 +76,38 @@ def predict():
     if selected_model=="xgboost":
         print("selected model is " + selected_model)
         model = pickle.load(open('models/15wXGB_limit.pickle', 'rb'))
+        features_values_string_numeric = input_string.copy()[1:]
+
+        features_values_string_numeric[2] = 0.15
+        features_values_string_numeric[3] = 0.65
+
+        features_values = [float(x) for x in features_values_string_numeric]
+        p = []
+        p.append(features_values[5])
+        p.append(features_values[4])
+        p.append(features_values[0])
+        p.append(features_values[7])
+        p.append(features_values[8])
+        p.append(features_values[1])
+        p.append(features_values[6])
+        p.append(features_values[9])
+        p.append(features_values[3])
+        p.append(features_values[2])
+
+        input_string_predictors = 'Your input values: Distance, ' + str(features_values[0]) + ' miles; ' + 'Duration, ' +  str(features_values[1]) + ' minutes; '\
+            + 'City: ' + str(input_string[3]) + '; Street: ' +  str(input_string[4]) + '; Longitude of the start point: ' + str(features_values[4])\
+            + '; Latitude of the start points: ' + str(features_values[5]) + '; Air Pression: ' + str(features_values[6]) + ' inches; '\
+            + 'Temperature: ' + str(features_values[7]) + ' F; '\
+            + 'Humidity: ' + str(features_values[8]) + '%; '\
+            + 'Wind Speed: ' + str(features_values[9]) + ' mph'
+
+        final_features = [np.array(p)]
+        prediction = model.predict(final_features)
+        output = prediction[0]
+
+        return render_template('index.html', picked_model='The model you picked is ' + selected_model,
+                input_values=input_string_predictors, prediction_text='The predicted accident severity is {}'.format(output))
+
     
     features_values_string_numeric = input_string.copy()[1:]
 
@@ -96,7 +128,7 @@ def predict():
     output = prediction[0]
 
     return render_template('index.html', picked_model='The model you picked is ' + selected_model,
-             input_values=input_string_predictors, prediction_text='The predicted accident severity is {}'.format(output))
+            input_values=input_string_predictors, prediction_text='The predicted accident severity is {}'.format(output))
 
 if __name__ == '__main__':
     app.run(host='localhost', port=6242, debug=True)
