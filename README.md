@@ -98,7 +98,7 @@ python app.py
 ## FAQs
 
 - If port number 6242 is used in other process\
-  You need to change the port number in the line in app.py
+  You need to change the port number in the line below in app.py
   
   ```
   if __name__ == '__main__':
