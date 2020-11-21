@@ -33,7 +33,7 @@ If you find errors with our implementation, please submit a pull request on our 
 
 ## Webapp Installation and Launch
 
-- You can choose to download the for this repository to your system or use terminal:
+- You can choose to download or clone the repository to your system:
 
 ```
 https://github.com/chenrq2005/cse6242_team76_project.git
