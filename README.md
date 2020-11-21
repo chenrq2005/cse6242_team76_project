@@ -33,10 +33,10 @@ If you find errors with our implementation, please submit a pull request on our 
 
 ## Webapp Installation and Launch
 
-- You can choose to download or clone the repository to your system:
+- You can choose to download the entire repo as a zip file or clone the repo to your system using the command in your terminal:
 
 ```
-https://github.com/chenrq2005/cse6242_team76_project.git
+git clone https://github.com/chenrq2005/cse6242_team76_project.git
 ```
 
 - Some files with size larger than 100 MB are not included in the Git repo, like the processed dataset (dataset_featureviz.csv files) and trained model (15wRF_limit.pickle). Please download them from [this Google shared drive](https://drive.google.com/drive/folders/11G-OWjtxEsZ6_sLuW03AQNa4mlvdiTS5). After downloading, **please save that dataset_featureviz.csv file into the app foler /static/data directory and save the 15wRF_limit.pickle files into /models directory.**
